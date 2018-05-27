@@ -1,0 +1,78 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1527423404202" stop="1527423404307">
+  <name>test_001</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1527423404202" status="passed" stop="1527423404208">
+      <name>Test_01.test_001[60-61]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="904-MainThread"/>
+        <label name="host" value="LAPTOP-UHS6H3KR"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1527423404209" status="failed" stop="1527423404294">
+      <name>Test_01.test_001[59-70]</name>
+      <failure>
+        <message>AssertionError: assert (129 &gt;= 120 and 59 &gt;= 60)</message>
+        <stack-trace>self = &lt;test_001.Test_01 object at 0x05B859D0&gt;, a = 59, b = 70
+
+    @pytest.mark.parametrize("a,b",[(60,61),(59,70),(59,58),(80,85)])
+    def test_001(self,a,b):
+        c = a + b
+&gt;       assert c &gt;= 120 and a &gt;= 60
+E       assert (129 &gt;= 120 and 59 &gt;= 60)
+
+scripts\test_001.py:7: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="904-MainThread"/>
+        <label name="host" value="LAPTOP-UHS6H3KR"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1527423404295" status="failed" stop="1527423404303">
+      <name>Test_01.test_001[59-58]</name>
+      <failure>
+        <message>AssertionError: assert (117 &gt;= 120)</message>
+        <stack-trace>self = &lt;test_001.Test_01 object at 0x05B85A90&gt;, a = 59, b = 58
+
+    @pytest.mark.parametrize("a,b",[(60,61),(59,70),(59,58),(80,85)])
+    def test_001(self,a,b):
+        c = a + b
+&gt;       assert c &gt;= 120 and a &gt;= 60
+E       assert (117 &gt;= 120)
+
+scripts\test_001.py:7: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="904-MainThread"/>
+        <label name="host" value="LAPTOP-UHS6H3KR"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1527423404304" status="passed" stop="1527423404307">
+      <name>Test_01.test_001[80-85]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="904-MainThread"/>
+        <label name="host" value="LAPTOP-UHS6H3KR"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
